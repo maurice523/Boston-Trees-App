@@ -7,7 +7,7 @@ import pydeck as pdk
 
 
 def load_data():
-    df = pd.read_csv("views/bprd_trees(in).csv")
+    df = pd.read_csv("tree/views/bprd_trees(in).csv")
     list_valid = df["date_plant"].notna() & (df["date_plant"] != "--")
     years = []
     num = 0

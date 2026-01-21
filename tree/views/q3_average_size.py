@@ -4,7 +4,7 @@ import altair as alt
 
 
 def load_data():
-    df = pd.read_csv("views/bprd_trees(in).csv")
+    df = pd.read_csv("tree/views/bprd_trees(in).csv")
     df["dbh"] = pd.to_numeric(df["dbh"], errors="coerce")
     df["neighborhood"] = df["neighborhood"].fillna("Unknown")
     return df

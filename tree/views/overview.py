@@ -5,7 +5,7 @@ import altair as alt
 
 def load_data():
     # Load the tree data from the CSV stored in the views folder
-    df = pd.read_csv("views/bprd_trees(in).csv")
+    df = pd.read_csv("tree/views/bprd_trees(in).csv")
 
     # Make sure DBH (tree diameter) is numeric
     df["dbh"] = pd.to_numeric(df["dbh"], errors="coerce")

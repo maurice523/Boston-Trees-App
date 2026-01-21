@@ -6,7 +6,7 @@ import altair as alt
 
 
 def load_data():
-    df = pd.read_csv("views/bprd_trees(in).csv")
+    df = pd.read_csv("tree/views/bprd_trees(in).csv")
 
     df["neighborhood"] = df["neighborhood"].fillna("Unknown")
     df["spp_com"] = df["spp_com"].fillna("Unknown species")
